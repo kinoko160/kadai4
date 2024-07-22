@@ -79,6 +79,13 @@ img {
     margin: 10px 0;
 }
 
+/* 画像サイズの変更例 */
+section img {
+    max-width: 600px; /* 最大幅を600pxに設定 */
+    width: 100%; /* コンテナ幅に合わせて調整 */
+    margin: 10px auto; /* 自動で中央寄せ */
+}
+
 /* リストのスタイル */
 ol, ul {
     margin: 10px 0;
