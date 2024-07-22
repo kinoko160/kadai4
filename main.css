@@ -36,6 +36,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    padding-left: 0;
 }
 
 nav ul li {
@@ -98,15 +99,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-/* レスポンシブデザイン */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-    
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-
