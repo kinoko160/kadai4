@@ -6,17 +6,18 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #f0f2f5;
     color: #333;
 }
 
 /* ヘッダー */
 header {
-    background: #333;
+    background: #4CAF50;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
 }
 
 /* ナビゲーション */
@@ -24,8 +25,9 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    background: #f4f4f4;
+    background: #fff;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li {
@@ -35,12 +37,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #4CAF50;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #007BFF;
+    color: #388E3C;
 }
 
 /* メインコンテンツ */
@@ -48,8 +51,9 @@ main {
     padding: 2rem;
     background: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 2rem;
+    margin: 2rem auto;
     border-radius: 8px;
+    max-width: 1200px;
 }
 
 /* 画像スタイル */
@@ -58,6 +62,8 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -77,16 +83,26 @@ img + img {
 }
 
 .image-row img {
-    max-width: 300px; /* 画像の最大幅を設定 */
+    max-width: 100%; /* 画像の最大幅を設定 */
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* レスポンシブデザイン */
+@media (min-width: 769px) {
+    .image-row img {
+        max-width: 300px; /* デスクトップでは画像の最大幅を設定 */
+    }
+}
+
 @media (max-width: 768px) {
     .image-row {
         flex-direction: column;
         align-items: center;
+    }
+
+    .image-row img {
+        max-width: 100%; /* モバイルでは画像がコンテナの幅に合わせて拡大 */
     }
 }
