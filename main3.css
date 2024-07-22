@@ -77,16 +77,26 @@ img + img {
 }
 
 .image-row img {
-    max-width: 300px; /* 画像の最大幅を設定 */
+    max-width: 100%; /* 画像の最大幅を設定 */
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* レスポンシブデザイン */
+@media (min-width: 769px) {
+    .image-row img {
+        max-width: 300px; /* デスクトップでは画像の最大幅を設定 */
+    }
+}
+
 @media (max-width: 768px) {
     .image-row {
         flex-direction: column;
         align-items: center;
+    }
+
+    .image-row img {
+        max-width: 100%; /* モバイルでは画像がコンテナの幅に合わせて拡大 */
     }
 }
