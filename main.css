@@ -1,81 +1,93 @@
-/* main3.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #f4f4f4;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-main {
-    padding: 20px;
-}
-
-.image-row {
-    display: flex;
-    gap: 10px; /* Adjusts spacing between images */
-    flex-wrap: wrap; /* Allows images to wrap to next line if needed */
-    margin-bottom: 20px;
-}
-
-.image1, .image2, .image3, .image4, .image5, .image6, .image7 {
-    max-width: 100%; /* Ensures responsiveness */
-    height: auto; /* Keeps aspect ratio */
-}
-
-.image1 {
-    width: 150px; /* Adjust as needed */
-}
-
-.image2 {
-    width: 150px; /* Adjust as needed */
-}
-
-.image3 {
-    width: 200px; /* Adjust as needed */
-}
-
-.image4 {
-    width: 200px; /* Adjust as needed */
-}
-
-.image5 {
-    width: 250px; /* Adjust as needed */
-}
-
-.image6 {
-    width: 250px; /* Adjust as needed */
-}
-
-.image7 {
-    width: 300px; /* Adjust as needed */
-}
-
-footer {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エネルギー機械コースの学び</title>
+    <link rel="stylesheet" href="main3.css">
+</head>
+<body>
+    <header>
+        <h1>エネルギー機械コースの学び</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#introduction">コース紹介</a></li>
+            <li><a href="#curriculum">カリキュラム</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="introduction">
+            <h2>コース紹介</h2>
+            <p>エネルギー機械コースでは、輸送機械や発電所等の産業インフラの設計と運用に必要な技術を学びます。また、水素エネルギー等のクリーンエネルギーの創生と貯蔵、自然災害の予測分析など、人々のより良い生活と環境との共生を目指した技術についても学びます。詳細は<a href="https://www.ct.omu.ac.jp/courses/energy-mechanics/" target="_blank">こちら</a>をご覧ください。</p>
+            <div class="image-row">
+                <img src="歯車.jpg" alt="エネルギー機械コースの画像1" class="image1">
+                <img src="太陽光.jpg" alt="エネルギー機械コースの画像2" class="image2">
+            </div>
+        </section>
+        <section id="curriculum">
+            <h2>カリキュラム</h2>
+            <p>大阪公立大学工業高等専門学校のエネルギー機械コースについての学びは、以下のような内容を含みます。詳細は<a href="https://www.ct.omu.ac.jp/courses/energy-mechanics/" target="_blank">こちら</a>をご覧ください。</p>
+            <ol>
+                <li>
+                    <strong>基礎工学科目</strong>
+                    <ul>
+                        <li>数学: 工学に必要な数学的基礎を学びます。</li>
+                        <li>物理学: 力学、熱力学、電磁気学などの基礎を学びます。</li>
+                        <li>化学: 材料科学やエネルギー変換に関する基礎を学びます。</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>専門科目</strong>
+                    <ul>
+                        <li>熱工学: 熱エネルギーの基本原理や応用を学びます。</li>
+                        <div class="image-row">
+                            <img src="熱力学.jpg" alt="エネルギー機械コースの画像3" class="image3">
+                        </div>
+                        <li>流体力学: 流体の性質と流れの原理を学びます。</li>
+                        <div class="image-row">
+                            <img src="流体 画像.jpeg" alt="エネルギー機械コースの画像4" class="image4">
+                        </div>
+                        <li>機械設計: 機械部品の設計方法や解析を学びます。</li>
+                        <div class="image-row">
+                            <img src="製図1.jpg" alt="エネルギー機械コースの画像5" class="image5">
+                            <img src="製図２.jpg" alt="エネルギー機械コースの画像6" class="image6">
+                        </div>
+                        <li>エネルギー変換技術: 各種エネルギー源からのエネルギー変換技術を学びます（例：火力発電、再生可能エネルギー）。詳細は<a href="https://prtimes.jp/main/html/rd/p/000000352.000007141.html" target="_blank">こちら</a>をご覧ください。</li>
+                        <li>材料力学: 機械材料の特性や強度について学びます。</li>
+                        <li>制御工学: 機械システムの制御方法や理論を学びます。</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>実習・実験</strong>
+                    <ul>
+                        <li>機械工作実習: 実際の機械加工や製作を通じて、実践的な技術を習得します。</li>
+                        <li>エネルギー関連実験: 熱力学や流体力学の実験を通じて理論を実証します。</li>
+                        <li>設計実習: 機械の設計から製作までを行い、実践的なスキルを習得します。</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>プロジェクト・研究活動</strong>
+                    <ul>
+                        <li>卒業研究: 自らの興味やテーマに基づいて、専門的な研究を行います。</li>
+                        <li>インターンシップ: 企業や研究機関での実務経験を積む機会があります。</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>その他の活動</strong>
+                    <ul>
+                        <li>学外活動: 学会発表やコンテストへの参加など、学外での活動も奨励されています。</li>
+                        <li>資格取得支援: 技術士や機械設計技術者などの資格取得支援があります。</li>
+                    </ul>
+                </li>
+            </ol>
+            <div class="image-row">
+                <img src="船.jpg" alt="エネルギー機械コースの画像7">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Osaka Metropolitan University College of Technology. All rights reserved.</p>
+    </footer>
+</body>
+</html>
