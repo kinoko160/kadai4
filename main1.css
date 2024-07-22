@@ -1,95 +1,78 @@
 /* main.css */
 
-/* 全体のスタイル設定 */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
-header, nav, main, footer {
-    padding: 20px;
-}
-
-/* ヘッダーのスタイル設定 */
 header {
-    background-color: #f8f9fa;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-/* ナビゲーションのスタイル設定 */
-nav {
-    background-color: #343a40;
-    color: white;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 0;
     text-align: center;
+    background: #f4f4f4;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #333;
 }
 
-/* メインセクションのスタイル設定 */
 main {
-    padding: 20px;
+    padding: 1rem;
 }
 
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    border-bottom: 2px solid #343a40;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-/* 画像のスタイル設定 */
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px 0;
+    margin: 0 auto;
 }
 
-/* リストのスタイル設定 */
-ol {
-    margin: 20px 0;
+section {
+    margin-bottom: 2rem;
 }
 
-ul {
-    margin: 10px 0;
+img {
+    display: block;
+    margin: 0 auto;
 }
 
-/* フッターのスタイル設定 */
-footer {
-    background-color: #f8f9fa;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+img + img {
+    margin-top: 1rem;
 }
 
-/* レスポンシブデザイン設定 */
+/* 横並びにするためのスタイル */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* 画像間の隙間を設定 */
+    flex-wrap: wrap;
+}
+
+.image-row img {
+    max-width: 300px; /* 画像の最大幅を設定 */
+    height: auto;
+}
+
+/* レスポンシブデザイン */
 @media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    .image-row {
+        flex-direction: column;
+        align-items: center;
     }
 }
